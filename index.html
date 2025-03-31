@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITI Mock Test Registration</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        H1 {
+            text-align: center;
+            color: red;
+            background-color: greenyellow
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .btn-group {
+            text-align: center;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: green;
+        }
+        .reset-btn {
+            background-color: red;
+        }
+        .gender-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.gender-group input {
+    margin-right: 5px;
+}
+
+</style
+  
+</head>
+
+<body>
+
+    <div class="container">
+        <H1>ITI Mock Test Registration</H1>
+        <form action="https://formsubmit.co/el/yisiba" mathod="post">
+            <label>First Name</label>
+            <input type="text" name="first_name" required>
+
+            <label>Last Name</label>
+            <input type="text" name="last_name" required>
+
+            <label>Trade</label>
+            <select name="trade"required>
+              <option value="select trade">select trade</option>
+             
+              <option value="Electrician">Electrician </option>
+            
+              
+             <option value="fitter">Fitter</option>
+              
+           
+              <option value="motor mechanic">Motor mechanic</option>
+
+              
+            
+              <option value="welder">Welder</option>
+                <option value="mechanic diesel">Mechanic diesel</option>
+                  <option value="draftsman civil">Draftsman civil</option>
+                    <option value="Copa">Copa</option>
+                    
+                    
+              
+               </select> 
+               
+
+            <label>Upload your image</label>
+            <input type="file" name="image">
+
+            <label>Select Gender</label>
+<div class="gender-group">
+    <input type="radio" name="gender" value="male" id="male" required>
+    <label for="male">Male</label>
+
+    <input type="radio" name="gender" value="female" id="female" required>
+    <label for="female">Female</label>
+
+    <input type="radio" name="gender" value="other" id="other" required>
+    <label for="other">Other</label>
+</div> <br>
+
+            <label>Registration Number</label>
+            <input type="text" name="reg_number" required>
+
+            <label>Password</label>
+            <input type="password" name="password" required>
+
+            <label>Date of Birth (DD/MM/YYYY)</label>
+            <input type="date" name="dob" required>
+
+            <label>Mobile Number</label>
+            <input type="tel" name="mobile" required>
+
+            <label>Email ID</label>
+            <input type="email" name="email" required>
+
+            <div class="btn-group">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+    <br>
+<br>
+<br>
+  yahan click karke register kare<button id="openModal" color="red">Register Now</button>
+
+    <div id="modal">
+        <div id="modal-content">
+            <h2>Register Here</h2>
+            <form>
+                <input type="text" placeholder="Enter Name" required><br><br>
+                <button type ="submit">Submit</button>
+            </form>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+</body>
+</html>
+    <script>
+        let modal = document.getElementById("modal");
+        document.getElementById("openModal").addEventListener("click", function() {
+            modal.style.display = "block";
+        });
+
+
+
+      
